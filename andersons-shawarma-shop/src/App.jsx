@@ -19,7 +19,10 @@ function App() {
             <img src={logo} alt="Logo" />
           </div>
           <nav className="space-x-6 hidden text-lg font-manrope font-semibold text-[#D9D9D9] md:flex">
-            <a href="#" className="hover:text-green-400 transition-all">
+            <a
+              href="#"
+              className="hover:text-[#D9D9D9] hover:tex[#1F2926] transition-all"
+            >
               Home
             </a>
             <a href="#about" className="hover:text-green-400 transition-all">
@@ -37,7 +40,7 @@ function App() {
             <button className="hidden md:flex text-[#D9D9D9] hover:text-green-400 text-3xl">
               <LuShoppingBag />
             </button>
-            <button className="hidden md:flex bg-transparent hover:text-[#D9D9D9] text-lg font-semibold font-manrope text-[#D9D9D9] border border-[#D9D9D9]  hover:bg-green-400 transition-all px-16 py-3 rounded">
+            <button className="hidden md:flex bg-transparent text-lg font-semibold font-manrope text-[#D9D9D9] border border-[#D9D9D9]  hover:bg-[#D9D9D9] hover:text-[#1F2926] transition-all px-16 py-3 rounded">
               Log In
             </button>
           </div>
