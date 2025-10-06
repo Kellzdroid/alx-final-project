@@ -1,0 +1,14 @@
+@import url(https://db.onlinewebfonts.com/c/500bab6b91b58ed1e94efffe8092693c?family=Manrope);
+
+@font-face {
+  font-family: "TheNightWatch", "Manrope";
+  src: url(./assets/TheNightWatch.ttf);
+  src: url(./assets/Manrope.ttf);
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-night: TheNightWatch, "sans-serif";
+  --font-manrope: Manrope, "sans-serif";
+}
