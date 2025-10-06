@@ -1,8 +1,12 @@
 @import url(https://db.onlinewebfonts.com/c/500bab6b91b58ed1e94efffe8092693c?family=Manrope);
 
 @font-face {
-  font-family: "TheNightWatch", "Manrope";
+  font-family: "TheNightWatch";
   src: url(./assets/TheNightWatch.ttf);
+}
+
+@font-face {
+  font-family: "Manrope";
   src: url(./assets/Manrope.ttf);
 }
 
