@@ -1,0 +1,46 @@
+export const MENU = [
+  {
+    id: "shawarma1",
+    title: "Mixed Shawarma",
+    price: 1200,
+    desc: "Hand-rolled shawarma with mixed fillings",
+    img: "/Hero.png",
+    options: ["Small", "Regular", "Large"],
+  },
+  {
+    id: "shawarma2",
+    title: "Beef Shawarma",
+    price: 1300,
+    desc: "Beef slices, signature sauce",
+    img: "/Hero.png",
+    options: ["Regular", "Large"],
+  },
+  {
+    id: "wraps1",
+    title: "Chicken Wrap",
+    price: 1000,
+    desc: "Spicy chicken, veg",
+    img: "/Hero.png",
+  },
+  {
+    id: "burger1",
+    title: "Beef Burger",
+    price: 1200,
+    desc: "Juicy beef patty",
+    img: "/Hero.png",
+  },
+  {
+    id: "fries",
+    title: "Fries",
+    price: 400,
+    desc: "Crispy fries",
+    img: "/Hero.png",
+  },
+  {
+    id: "drink",
+    title: "Soda",
+    price: 200,
+    desc: "Chilled drink",
+    img: "/Hero.png",
+  },
+];

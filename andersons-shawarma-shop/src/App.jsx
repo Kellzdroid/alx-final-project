@@ -1,6 +1,8 @@
 import { useState } from "react";
 import React from "react";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Menu from "./components/Menu";
 import logo from "/public/images/logo.png";
 import { LuShoppingBag } from "react-icons/lu";
 import { CiMenuBurger } from "react-icons/ci";
@@ -13,12 +15,13 @@ function App() {
   };
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-[#1F2629]">
+      <div className="min-h-screen  flex flex-col bg-[#1F2629]">
         <header className="px-18 md:px-32 py-4 flex items-center justify-between shadow-xl">
-          <div className="">
-            <img src={logo} alt="Logo" />
+          <div className="font-night mt-4 text-center leading-2.5 text-3xl text-[#D9D9D9] m-o">
+            Anderson's
+            <p className="font-manrope text-xl">— shawarma shop —</p>
           </div>
-          <nav className="space-x-6 hidden text-lg font-manrope font-semibold text-[#D9D9D9] md:flex">
+          <nav className="space-x-6 hidden text-lg font-manrope  text-[#D9D9D9] md:flex">
             <a
               href="#"
               className="hover:text-[#D9D9D9] hover:tex[#1F2926] transition-all"
@@ -80,6 +83,8 @@ function App() {
         </header>
         <main className="flex-1">
           <Hero />
+          <About />
+          <Menu />
         </main>
       </div>
     </>
