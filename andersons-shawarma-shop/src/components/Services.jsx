@@ -9,13 +9,13 @@ const Service = ({ title, text, img }) => (
     <h4 className="font-semibold mt-12 font-night text-[#1f2629] text-xl">
       {title}
     </h4>
-    <p className="text-sm text-[#1f2629] mt-3">{text}</p>
+    <p className="font-manrope text- text-[#1f2629] mt-3">{text}</p>
   </div>
 );
 
 export default function Services() {
   return (
-    <section className="container mx-auto px-18 md:px-24 py-16 ">
+    <section className="container mx-auto px-6 md:px-4 py-16 ">
       <h2 className="text-center text-[#d9d9d9] font-night text-3xl mb-8">
         OUR SERVICES
       </h2>

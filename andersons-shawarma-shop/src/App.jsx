@@ -4,7 +4,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Menu from "./components/Menu";
 import Services from "./components/Services";
-import Reviews from "./components/Reviews";
 import CartWidget from "./components/CartWidget";
 import logo from "/public/images/logo.png";
 import { LuShoppingBag } from "react-icons/lu";
@@ -90,7 +89,6 @@ function App() {
           <About />
           <Menu />
           <Services />
-          <Reviews />
         </main>
       </div>
     </>

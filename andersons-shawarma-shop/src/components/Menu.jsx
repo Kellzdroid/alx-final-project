@@ -72,7 +72,7 @@ function MenuCard({ item }) {
 
 function Menu() {
   return (
-    <section id="menu" className="container mx-auto px-18 md:px-24 py-16">
+    <section id="menu" className="container mx-auto px-6 md:px-2 py-16">
       <h2 className="text-center text-[#d9d9d9] font-night text-3xl mb-8">
         OUR MENU
       </h2>
