@@ -19,7 +19,7 @@ export default function Services() {
       <h2 className="text-center text-[#d9d9d9] font-night text-3xl mb-8">
         OUR SERVICES
       </h2>
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3  gap-6">
         <Service
           title="EASY TO ORDER"
           text="You only need a few taps to order. Handcrafted with fresh ingredients and rich flavours, our shawarma brings tradition to your taste buds."

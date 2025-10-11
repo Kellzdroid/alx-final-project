@@ -4,8 +4,9 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Menu from "./components/Menu";
 import Services from "./components/Services";
+import Reviews from "./components/Reviews";
+import Contact from "./components/Contact";
 import CartWidget from "./components/CartWidget";
-import logo from "/public/images/logo.png";
 import { LuShoppingBag } from "react-icons/lu";
 import { CiMenuBurger } from "react-icons/ci";
 import { GrClose } from "react-icons/gr";
@@ -89,6 +90,8 @@ function App() {
           <About />
           <Menu />
           <Services />
+          <Reviews />
+          <Contact />
         </main>
       </div>
     </>
