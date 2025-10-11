@@ -1,5 +1,6 @@
 import React from "react";
 import { CgArrowLongUp } from "react-icons/cg";
+import { CgArrowLongRight } from "react-icons/cg";
 
 export default function Footer() {
   return (
@@ -87,8 +88,8 @@ export default function Footer() {
             placeholder="Your email"
             className="border-b border- border-[#d9d9d9] text-sm focus:outline-none focus:border-white px-12 py-1 text-[#d9d9d9] "
           />
-          <button className="text-sm font-night hover:text-white transition-all">
-            Stay tuned →
+          <button className="text-sm font-night flex flex-row gap-4 items-center hover:text-white transition-all">
+            Stay tuned <CgArrowLongRight />
           </button>
         </div>
         <p className="text-sm text-[#d9d9d9] font-manrope text-center sm:text-right">

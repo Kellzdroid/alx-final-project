@@ -25,7 +25,7 @@ function About() {
               through generations. We keep the old-school technique alive while
               serving fast — it's how things have always been done.
             </p>
-            <div className="flex mt-50 hover:underline underline-offset-4 gap-4">
+            <div className="flex flex-row items-center mt-50 hover:underline underline-offset-4 gap-4">
               <CgArrowLongRight />
               <span>Learn more</span>
             </div>

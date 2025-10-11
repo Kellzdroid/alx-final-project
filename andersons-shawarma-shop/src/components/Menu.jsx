@@ -1,88 +1,93 @@
-import React, { useState } from "react";
-import { MENU } from "../data/menuData";
-import { useCart } from "../context/CartContext";
+import React from "react";
+import MenuItem from "../data/MenuItem";
 
-function MenuCard({ item }) {
-  const { addItem } = useCart();
-  const [qty, setQty] = useState(1);
-  const [opt, setOpt] = useState(item.options?.[0] ?? null);
+export default function MenuSection() {
+  const menuItems = [
+    {
+      id: 1,
+      title: "Beef Shawarma",
+      image: "/images/minibeef.jpg",
+      price: 2500,
+      category: "Beef Shawarma",
+      options: [
+        "Mini Beef Shawarma",
+        "Regular Beef Shawarma",
+        "Jumbo Beef Shawarma",
+      ],
+    },
+    {
+      id: 2,
+      title: "Chicken Shawarma",
+      image: "/images/minichicken.jpg",
+      price: 2300,
+      category: "Chicken Shawarma",
+      options: [
+        "Mini Chicken Shawarma",
+        "Regular Chicken Shawarma",
+        "Jumbo Chicken Shawarma",
+      ],
+    },
+    {
+      id: 3,
+      title: "Mixed Grilled Shawarma",
+      image: "/images/mixgrill.jpg",
+      price: 2700,
+      category: "Mixed Grilled Shawarma",
+      options: [
+        "Mini Mix Shawarma",
+        "Regular Mix Shawarma",
+        "Family Mix Shawarma",
+      ],
+    },
+    {
+      id: 4,
+      title: "Burger",
+      image: "/images/burger.jpg",
+      price: 2000,
+      category: "Burger",
+      options: [
+        "Beef Burger",
+        "Chicken Burger",
+        "Double Stack",
+        "Cheese Burger",
+      ],
+    },
+    {
+      id: 5,
+      title: "French Fries",
+      image: "/images/frenchfries.jpg",
+      price: 1200,
+      category: "French Fries",
+      options: ["Small Fries", "Medium Fries", "Large Fries", "Loaded Fries"],
+    },
+    {
+      id: 6,
+      title: "Drinks",
+      image: "/images/soda.jpg",
+      price: 800,
+      category: "Drinks",
+      options: ["Coke", "Pepsi", "Fanta", "Sprite", "Water"],
+    },
+  ];
 
   return (
-    <>
-      <div className="container p-4">
-        <img
-          src={item.img}
-          alt={item.title}
-          className="w-full h-100  mx-auto rounded mb-3"
-        />
-
-        <div className="grid grid-cols-2 flex-row">
-          {item.options && (
-            <select
-              className="mt-2 p-2 bg-[#1F2629] border border-[#D9D9D9] rounded w-full"
-              value={opt}
-              onChange={(e) => setOpt(e.target.value)}
-            >
-              {item.options.map((o) => (
-                <option key={o} value={o}>
-                  {o}
-                </option>
-              ))}
-            </select>
-          )}
-        </div>
-
-        <div className="mt-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setQty((q) => Math.max(1, q - 1))}
-              className="px-2 border rouded"
-            >
-              -
-            </button>
-            <button
-              onClick={() => setQty((q) => q + 1)}
-              className="px-2 border rouded"
-            >
-              +
-            </button>
-          </div>
-
-          <div className="text-right">
-            <div className="text-sm">Price:</div>
-            <div className="font-semibold">₦{item.price.toFixed(2)}</div>
-          </div>
-        </div>
-        <button
-          onClick={() =>
-            addItem(
-              { id: item.id, title: item.title, price: item.price },
-              qty,
-              opt
-            )
-          }
-          className="mt-4 w-full py2 bg-accent rounded"
-        >
-          Add to Cart
-        </button>
-      </div>
-    </>
-  );
-}
-
-function Menu() {
-  return (
-    <section id="menu" className="container mx-auto px-6 md:px-2 py-16">
-      <h2 className="text-center text-[#d9d9d9] font-night text-3xl mb-8">
-        OUR MENU
+    <section className="text-[#d9d9d9] py-16 px-16S md:px-24 lg:px-32">
+      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-night">
+        Our Menu
       </h2>
-      <div className="grid sm:grid-cols-1 text-[#d9d9d9] lg:grid-cols-2 gap-6">
-        {MENU.map((m) => (
-          <MenuCard key={m.id} item={m} />
+
+      {/* Grid of Menu Cards */}
+      <div className="grid gap-10 sm:grid-cols-2">
+        {menuItems.map((item) => (
+          <MenuItem
+            key={item.id}
+            image={item.image}
+            title={item.title}
+            price={item.price}
+            options={item.options}
+          />
         ))}
       </div>
     </section>
   );
 }
-
-export default Menu;
