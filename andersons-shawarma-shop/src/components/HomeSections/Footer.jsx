@@ -6,7 +6,6 @@ export default function Footer() {
   return (
     <footer className=" text-[#D9D9D9] px-6 md:px-30 py-12 mt-16 border-t border-[#d9d9d9]">
       <div className="grid md:grid-cols-4 gap-20">
-        {/* BRAND */}
         <div>
           <div className="font-night mt-4 text-center leading-2.5 text-3xl text-[#D9D9D9]">
             Anderson's
@@ -14,7 +13,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* MENU */}
         <div>
           <h4 className="font-semibold font-night text-[#d9d9d9] mb-3">MENU</h4>
           <ul className="space-y-2 font-manrope text-sm">
@@ -33,7 +31,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* CONTACTS */}
         <div>
           <h4 className="font-semibold font-night text-[#d9d9d9] mb-3">
             CONTACTS
@@ -53,7 +50,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* SOCIAL MEDIA */}
         <div className="">
           <h4 className="font-semibold font-night text-[#d9d9d9] mb-3">
             SOCIAL MEDIA
@@ -69,18 +65,9 @@ export default function Footer() {
               Telegram
             </li>
           </ul>
-
-          {/* SCROLL TO TOP ARROW */}
-          <div
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="absolute right-0 top-0 cursor-pointer hover:translate-y-[-4px] transition-all"
-          >
-            <CgArrowLongUp className="text-[#d9d9d9]" />
-          </div>
         </div>
       </div>
 
-      {/* NEWSLETTER */}
       <div className="mt-12 border-t border-[#d9d9d9] pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
         <div className="flex flex-col sm:flex-row items-center gap-3">
           <input
@@ -97,7 +84,6 @@ export default function Footer() {
         </p>
       </div>
 
-      {/* BOTTOM TEXT */}
       <div className="mt-10 text-sm text-[#d9d9d9] font-manrope border-t border-[#d9d9d9] pt-4 flex flex-col md:flex-row justify-between items-center gap-2  px-6 md:px-20 py-12">
         <p>© 2025 created by Caleb Anderson. All rights reserved.</p>
         <p>ALX Nigeria Project</p>

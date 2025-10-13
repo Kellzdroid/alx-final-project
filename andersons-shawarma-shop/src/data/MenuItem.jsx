@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import toast from "react-hot-toast";
 
 export default function MenuItem({ image, title, price, options = [] }) {
   const [quantity, setQuantity] = useState(1);
   const [option, setOption] = useState(options[0] || "");
+  const { addToCart } = useContext(CartContext);
 
   const handleAddToCart = () => {
-    alert(`Added ${quantity} x ${option} (${title}) to cart!`);
+    addToCart({ title, option, price, quantity, image });
+    toast.success(`${quantity} x ${option} (${title}) to cart!`);
   };
 
   return (
     <div className="bg-[#1f2629] text-[#d9d9d9] p-8 rounded shadow-xl hover:scale-[1.02] transition-transform duration-300">
-      {/* Image */}
       <div className="rounded h-100 overflow-hidden mb-4">
         <img
           src={image}
@@ -19,10 +22,8 @@ export default function MenuItem({ image, title, price, options = [] }) {
         />
       </div>
 
-      {/* Title */}
-      <h3 className="text-xl font-night font-medium mb-3 text-left">{title}</h3>
+      <h3 className="text-xl font-night mb-3 text-left">{title}</h3>
 
-      {/* Option + Quantity */}
       <div className="flex justify-between items-center mb-6">
         <select
           value={option}
@@ -46,7 +47,6 @@ export default function MenuItem({ image, title, price, options = [] }) {
         </div>
       </div>
 
-      {/* Add to Cart + Price */}
       <div className="flex justify-between items-center">
         <button
           onClick={handleAddToCart}

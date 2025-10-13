@@ -1,5 +1,5 @@
 import React from "react";
-import MenuItem from "../data/MenuItem";
+import MenuItem from "../../data/MenuItem";
 
 export default function MenuSection() {
   const menuItems = [
@@ -71,12 +71,11 @@ export default function MenuSection() {
   ];
 
   return (
-    <section className="text-[#d9d9d9] py-16 px-16S md:px-24 lg:px-32">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-night">
+    <section className="text-[#d9d9d9] py-16 px-16 md:px-32 lg:px-32">
+      <h2 className="text-3xl md:text-3xl mb-12 text-center font-night">
         Our Menu
       </h2>
 
-      {/* Grid of Menu Cards */}
       <div className="grid gap-10 sm:grid-cols-2">
         {menuItems.map((item) => (
           <MenuItem

@@ -10,40 +10,48 @@ const Navbar = () => {
   const closeMenu = () => setMenu(false);
 
   return (
-    <header className="px-6 md:px-32 py-4 flex items-center justify-between shadow-xl bg-[#1F2629]">
-      {/* Logo */}
+    <header className="px-24 md:px-32 py-4 flex items-center justify-between shadow-xl bg-[#1F2629]">
       <div className="font-night mt-4 text-center leading-2.5 text-3xl text-[#D9D9D9]">
         Anderson's
         <p className="font-manrope text-xl">— shawarma shop —</p>
       </div>
 
-      {/* Desktop Nav */}
       <nav className="space-x-6 hidden text-lg font-manrope text-[#D9D9D9] md:flex">
-        <Link to="/" className="hover:text-white transition-all">
+        <Link
+          to="/"
+          className="hover:underline underline-offset-4 transition-all"
+        >
           Home
         </Link>
-        <Link to="/about" className="hover:text-white transition-all">
+        <Link
+          to="/about"
+          className="hover:underline underline-offset-4 transition-all"
+        >
           About
         </Link>
-        <Link to="/menu" className="hover:text-white transition-all">
+        <Link
+          to="/menu"
+          className="hover:underline underline-offset-4 transition-all"
+        >
           Menu
         </Link>
-        <Link to="/contact" className="hover:text-white transition-all">
+        <Link
+          to="/contact"
+          className="hover:underline underline-offset-4 transition-all"
+        >
           Contact Us
         </Link>
       </nav>
 
-      {/* Right Side Buttons */}
       <div className="flex items-center font-semibold space-x-8">
         <button className="hidden md:flex text-[#D9D9D9] hover:text-white text-3xl">
           <LuShoppingBag />
         </button>
-        <button className="hidden md:flex bg-transparent text-lg font-semibold font-manrope text-[#D9D9D9] border border-[#D9D9D9] hover:bg-[#D9D9D9] hover:text-[#1F2629] transition-all px-6 py-3 rounded">
+        <button className="hidden md:flex bg-transparent text-lg font-semibold font-manrope text-[#D9D9D9] border border-[#D9D9D9] hover:bg-[#D9D9D9] hover:text-[#1F2629] transition-all px-16 py-3 rounded">
           Log In
         </button>
       </div>
 
-      {/* Mobile Menu Icon */}
       <div className="md:hidden flex items-center text-[#D9D9D9]">
         {menu ? (
           <GrClose size={30} onClick={handleChange} />
@@ -52,7 +60,6 @@ const Navbar = () => {
         )}
       </div>
 
-      {/* Mobile Dropdown */}
       <div
         className={`${
           menu ? "translate-x-0" : "-translate-x-full"
@@ -70,10 +77,6 @@ const Navbar = () => {
         <Link to="/contact" onClick={closeMenu} className="hover:underline">
           Contact
         </Link>
-
-        <button className="bg-transparent text-lg font-semibold font-manrope text-[#1F2629] border border-[#1F2629] hover:bg-[#1F2629] hover:text-[#D9D9D9] px-16 py-3 rounded transition">
-          Log In
-        </button>
       </div>
     </header>
   );

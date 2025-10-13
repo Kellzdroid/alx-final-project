@@ -1,17 +1,17 @@
 import React from "react";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Menu from "../components/Menu";
-import Services from "../components/Services";
-import Reviews from "../components/Reviews";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import Hero from "../components/HomeSections/Hero";
+import Whoweare from "../components/HomeSections/Whoweare";
+import Menu from "../components/HomeSections/Menu";
+import Services from "../components/HomeSections/Services";
+import Reviews from "../components/HomeSections/Reviews";
+import Contact from "../components/HomeSections/Contact";
+import Footer from "../components/HomeSections/Footer";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <About />
+      <Whoweare />
       <Menu />
       <Services />
       <Reviews />
