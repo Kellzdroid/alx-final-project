@@ -73,7 +73,7 @@ export default function Footer() {
           <input
             type="email"
             placeholder="Your email"
-            className="border-b border- border-[#d9d9d9] text-sm focus:outline-none focus:border-white px-12 py-1 text-[#d9d9d9] "
+            className="border- border-[#d9d9d9] text-sm focus:outline-none focus:border-white px-12 py-1 text-[#d9d9d9] "
           />
           <button className="text-sm font-night flex flex-row gap-4 items-center hover:text-white transition-all">
             Stay tuned <CgArrowLongRight />

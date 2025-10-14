@@ -5,7 +5,7 @@ function Hero() {
     <>
       <section className="relative">
         <div
-          className="h-[600px] bg-cover bg-center"
+          className="h-[760px] bg-cover bg-center"
           style={{ backgroundImage: "url(/public/images/hero1.jpg)" }}
         >
           <div className="h-full w-full flex items-center ">

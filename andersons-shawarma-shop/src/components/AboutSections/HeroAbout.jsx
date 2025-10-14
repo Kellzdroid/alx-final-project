@@ -4,7 +4,7 @@ import heroImg from "/public/images/outlet.jpeg";
 const HeroAbout = () => {
   return (
     <div>
-      <section className="relative h-[600px] flex items-center  justify-center">
+      <section className="relative h-[760px] flex items-center  justify-center">
         <img
           src={heroImg}
           alt="Shawarma Ambiance"

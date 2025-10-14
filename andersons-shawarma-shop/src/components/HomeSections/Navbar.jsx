@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import { LuShoppingBag } from "react-icons/lu";
 import { CiMenuBurger } from "react-icons/ci";
 import { GrClose } from "react-icons/gr";
+import { useCart } from "../../context/CartContext";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const handleChange = () => setMenu(!menu);
   const closeMenu = () => setMenu(false);
+  const { totalItems, totalPrice } = useCart();
 
   return (
     <header className="px-24 md:px-32 py-4 flex items-center justify-between shadow-xl bg-[#1F2629]">
@@ -45,7 +47,12 @@ const Navbar = () => {
 
       <div className="flex items-center font-semibold space-x-8">
         <button className="hidden md:flex text-[#D9D9D9] hover:text-white text-3xl">
-          <LuShoppingBag />
+          <LuShoppingBag size={45} />
+          {totalItems > 0 && (
+            <span className="absolute -top-0 -righ-0 bg-red-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+              {totalItems}
+            </span>
+          )}
         </button>
         <button className="hidden md:flex bg-transparent text-lg font-semibold font-manrope text-[#D9D9D9] border border-[#D9D9D9] hover:bg-[#D9D9D9] hover:text-[#1F2629] transition-all px-16 py-3 rounded">
           Log In
