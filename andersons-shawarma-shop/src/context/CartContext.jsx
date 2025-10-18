@@ -1,39 +1,65 @@
 import React, { createContext, useContext, useState } from "react";
 
-export const CartContext = createContext();
-
-export const useCart = () => useContext(CartContext);
+const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (item) => {
-    setCart((prevCart) => {
-      const existingItem = prevCart.find(
-        (i) => i.title === item.title && i.option === item.option
+    const newItem = {
+      title: item.title,
+      option: item.option || "Regular",
+      price: Number(item.price) || 0,
+      quantity: Number(item.quantity) || 1,
+      image: item.image || "/public/images/minichiken.jpg",
+    };
+
+    setCartItems((prev) => {
+      const existing = prev.find(
+        (p) => p.title === newItem.title && p.option === newItem.option
       );
 
-      if (existingItem) {
-        return prevCart.map((i) =>
-          i.title === item.title && i.option === item.option
-            ? { ...i, quantity: i.quantity + item.quantity }
-            : i
+      if (existing) {
+        return prev.map((p) =>
+          p.title === newItem.title && p.option === newItem.option
+            ? { ...p, quantity: p.quantity + newItem.quantity }
+            : p
         );
-      } else {
-        return [...prevCart, item];
       }
+
+      return [...prev, newItem];
     });
   };
 
-  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-  const totalPrice = cart.reduce(
-    (sum, item) => sum + item.quantity * item.price,
+  const removeFromCart = (title, option) => {
+    setCartItems((prev) =>
+      prev.filter((p) => !(p.title === title && p.option === option))
+    );
+  };
+
+  const total = cartItems.reduce(
+    (sum, item) => sum + item.price * item.quantity,
     0
   );
 
+  const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
+  const clearCart = () => setCartItems([]);
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, totalItems, totalPrice }}>
+    <CartContext.Provider
+      value={{
+        cartItems,
+        addToCart,
+        removeFromCart,
+        clearCart,
+        total,
+        totalItems,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );
 };
+
+export const useCart = () => useContext(CartContext);

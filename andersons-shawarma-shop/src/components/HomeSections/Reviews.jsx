@@ -7,14 +7,14 @@ import img3 from "/public/images/light.jpg";
 const Reviews = () => {
   return (
     <div className=" min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-[#d9d9d9] font-night text-3xl md:text-3xl not-only:text-center lg:pt-16 pt-24 pb-10">
+      <h1 className="text-[#d9d9d9] font-night text-2xl sm:text-4xl md:text-5xl not-only:text-center mb-12 lg:pt-16 pt-24 pb-10">
         Customer's Review
       </h1>
       <div className="bg-[#d9d9d9] w-ful lg:px-24 container mx-auto px-6 md:px-4 py-16 ">
         <div
           className="font-manrope
            grid md:grid-cols-3 gap-6
-            place-items-center  "
+            place-items-center"
         >
           <ReviewCard img={img1} name="Cynthia Ekwueme" />
           <ReviewCard img={img2} name="Zubby James" />

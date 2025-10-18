@@ -1,7 +1,7 @@
 import React from "react";
 import MenuItem from "../../data/MenuItem";
 
-export default function MenuSection() {
+function MenuPage() {
   const menuItems = [
     {
       id: 1,
@@ -90,3 +90,5 @@ export default function MenuSection() {
     </section>
   );
 }
+
+export default MenuPage;

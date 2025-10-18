@@ -5,7 +5,6 @@ import Menu from "../components/HomeSections/Menu";
 import Services from "../components/HomeSections/Services";
 import Reviews from "../components/HomeSections/Reviews";
 import Contact from "../components/HomeSections/Contact";
-import Footer from "../components/HomeSections/Footer";
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
       <Services />
       <Reviews />
       <Contact />
-      <Footer />
     </>
   );
 };

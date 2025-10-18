@@ -4,7 +4,6 @@ import PurposeAbout from "../components/AboutSections/PurposeAbout";
 import Showcase from "../components/AboutSections/Showcase";
 import ChefAbout from "../components/AboutSections/ChefAbout";
 import DownloadApp from "../components/AboutSections/DownloadApp";
-import FooterAbout from "../components/AboutSections/FooterAbout";
 
 const About = () => {
   return (
@@ -14,7 +13,6 @@ const About = () => {
       <Showcase />
       <ChefAbout />
       <DownloadApp />
-      <FooterAbout />
     </>
   );
 };

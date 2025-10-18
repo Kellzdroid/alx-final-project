@@ -16,3 +16,7 @@
   --font-night: TheNightWatch, "sans-serif";
   --font-manrope: Manrope, "sans-serif";
 }
+
+html {
+  scroll-behavior: smooth;
+}

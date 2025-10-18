@@ -1,19 +1,19 @@
-import React, { useState, useContext } from "react";
-import { CartContext } from "../context/CartContext";
+import React, { useState } from "react";
+import { useCart } from "../context/CartContext";
 import toast from "react-hot-toast";
 
 export default function MenuItem({ image, title, price, options = [] }) {
   const [quantity, setQuantity] = useState(1);
   const [option, setOption] = useState(options[0] || "");
-  const { addToCart } = useContext(CartContext);
+  const { addToCart } = useCart();
 
   const handleAddToCart = () => {
     addToCart({ title, option, price, quantity, image });
-    toast.success(`${quantity} x ${option} (${title}) to cart!`);
+    toast.success(`${quantity} x ${option} (${title}) added to cart!`);
   };
 
   return (
-    <div className="bg-[#1f2629] text-[#d9d9d9] p-8 rounded shadow-xl hover:scale-[1.02] transition-transform duration-300">
+    <div className="bg-[#1f2629] text-[#d9d9d9] border-1 p-8 rounded shadow-xl hover:scale-[1.02] transition-transform duration-300">
       <div className="rounded h-100 overflow-hidden mb-4">
         <img
           src={image}
