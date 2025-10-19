@@ -4,7 +4,7 @@ import Navbar from "./components/HomeSections/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Menu from "./pages/Menu";
-import ContactUs from "./pages/Contactus";
+import ContactUs from "./pages/ContactUs";
 import { Toaster } from "react-hot-toast";
 import { CartProvider } from "./context/CartContext";
 import Footer from "./components/HomeSections/Footer";

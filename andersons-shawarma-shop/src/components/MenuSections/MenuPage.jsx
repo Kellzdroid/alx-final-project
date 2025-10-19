@@ -72,9 +72,15 @@ function MenuPage() {
 
   return (
     <section className="text-[#d9d9d9] py-12 sm:py-16 lg:py-24 px-4 sm:px-8 md:px-16 lg:px-32">
-      <h2 className="text-2xl sm:text-4xl md:text-5xl mb-12 sm:mb-12 text-center font-night tracking-wide">
-        Our Menu
-      </h2>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-night mb-4">
+          Menu List
+        </h2>
+        <p className="text-sm sm:text-base font-manrope text-[#d9d9d9] max-w-2xl mx-auto leading-relaxed">
+          Explore our delicious varieties of shawarma, burgers, fries, and
+          drinks — freshly prepared to satisfy every craving.
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
         {menuItems.map((item) => (

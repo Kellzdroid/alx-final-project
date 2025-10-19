@@ -4,7 +4,7 @@ import { LiaApple } from "react-icons/lia";
 
 const DownloadAppMenu = () => {
   return (
-    <section className="container mx-auto text-[#d9d9d9] px-4 sm:px-8 md:px-12 lg:px-24 py-20 sm:py-28 md:py-32 text-center md:text-left">
+    <section className="container mx-auto font-manrope text-[#d9d9d9] px-4 sm:px-8 md:px-12 lg:px-24 py-20 sm:py-28 md:py-32 text-center md:text-left">
       <h2 className="text-2xl sm:text-4xl md:text-5xl  font-night mb-6 sm:mb-10">
         GET OUR MOBILE APP
       </h2>
