@@ -2,7 +2,7 @@ import React from "react";
 import ReviewCard from "../../Layouts/ReviewCard";
 import img1 from "/public/images/cynthia.jpg";
 import img2 from "/public/images/zubbie.jpg";
-import img3 from "/public/images/light.jpg";
+import img3 from "/public/images/Light.jpg";
 
 const Reviews = () => {
   return (

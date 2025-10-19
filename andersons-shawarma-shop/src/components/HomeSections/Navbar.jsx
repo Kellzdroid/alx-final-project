@@ -5,7 +5,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import { GrClose } from "react-icons/gr";
 import { useCart } from "../../context/CartContext";
 import LoginModal from "../Authentication/LoginModal";
-import CheckoutPipeline from "../checkout/CheckoutPipeline";
+import CheckoutPipeline from "../Checkout/CheckoutPipeline";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
