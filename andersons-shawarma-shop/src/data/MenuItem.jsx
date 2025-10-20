@@ -24,7 +24,6 @@ export default function MenuItem({ image, title, price, options = [] }) {
 
       <h3 className="text-lg sm:text-xl font-night mb-3 text-left">{title}</h3>
 
-      {/* --- Select & Quantity --- */}
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-6 mb-6">
         <select
           value={option}
@@ -48,7 +47,6 @@ export default function MenuItem({ image, title, price, options = [] }) {
         </div>
       </div>
 
-      {/* --- Button & Price --- */}
       <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
         <button
           onClick={handleAddToCart}
