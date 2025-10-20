@@ -1,5 +1,4 @@
 import React from "react";
-import deliveryImg from "/public/images/delivery.jpg";
 
 const Service = ({ title, text, img }) => (
   <div className="h-100 bg-[#d9d9d9] p-25 rounded text-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
@@ -15,7 +14,7 @@ const Service = ({ title, text, img }) => (
 
 function Services() {
   return (
-    <section className="container mx-auto px-6 md:px-4 py-16 ">
+    <section className=" mx-auto px-6 md:px-24 py-16 ">
       <h2 className="text-center text-[#d9d9d9] font-night text-2xl sm:text-4xl md:text-5xl mb-20">
         OUR SERVICES
       </h2>
@@ -23,17 +22,17 @@ function Services() {
         <Service
           title="EASY TO ORDER"
           text="You only need a few taps to order. Handcrafted with fresh ingredients and rich flavours, our shawarma brings tradition to your taste buds."
-          img="/public/images/MobileOrder.jpg"
+          img="/images/MobileOrder.jpg"
         />
         <Service
           title="FASTEST DELIVERY"
           text="One of the quickest delivery of our time. Handcrafted with fresh ingredients and rich flavours, our shawarma brings tradition to your taste buds."
-          img="/public/images/delivery.jpg"
+          img="/images/delivery.jpg"
         />
         <Service
           title="BEST QUALITY"
           text="Top quality assured for every dish. Handcrafted with fresh ingredients and rich flavours, our shawarma brings tradition to your taste buds."
-          img="/public/images/eating.jpg"
+          img="/images/eating.jpg"
         />
       </div>
     </section>

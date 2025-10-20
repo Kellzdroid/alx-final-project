@@ -71,7 +71,7 @@ export default function MenuSection() {
   ];
 
   return (
-    <section className="text-[#d9d9d9] py-12 sm:py-16 lg:py-24 px-4 sm:px-8 md:px-16 lg:px-32">
+    <section className="text-[#d9d9d9] py-12 sm:py-16 lg:py-24 px-4 sm:px-8 md:px-24 lg:px-24">
       <h2 className="text-2xl sm:text-4xl md:text-5xl mb-12 sm:mb-12 text-center font-night tracking-wide">
         Our Menu
       </h2>

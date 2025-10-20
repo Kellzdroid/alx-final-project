@@ -14,16 +14,17 @@ export default function MenuItem({ image, title, price, options = [] }) {
 
   return (
     <div className="bg-[#1f2629] text-[#d9d9d9] border-1 p-6 sm:p-8 rounded shadow-xl hover:scale-[1.02] transition-transform duration-300">
-      <div className="rounded h-100 overflow-hidden mb-4">
+      <div className="rounded overflow-hidden mb-4">
         <img
           src={image}
           alt={title}
-          className="w-full h-100 sm:h-100 object-cover hover:scale-105 transition-transform duration-300"
+          className="w-full h-56 sm:h-64 object-cover hover:scale-105 transition-transform duration-300"
         />
       </div>
 
       <h3 className="text-lg sm:text-xl font-night mb-3 text-left">{title}</h3>
 
+      {/* --- Select & Quantity --- */}
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-6 mb-6">
         <select
           value={option}
@@ -36,21 +37,22 @@ export default function MenuItem({ image, title, price, options = [] }) {
         </select>
 
         <div className="flex flex-row justify-between sm:justify-normal gap-4 items-center">
-          <label className="text-sm">Qantity:</label>
+          <label className="text-sm">Quantity:</label>
           <input
             type="number"
             min="1"
             value={quantity}
             onChange={(e) => setQuantity(Number(e.target.value))}
-            className="w-16 h-8 bg-[#d9d9d9] text-[#1f2629] text-center rounded"
+            className="w-14 h-8 bg-[#d9d9d9] text-[#1f2629] text-center rounded"
           />
         </div>
       </div>
 
+      {/* --- Button & Price --- */}
       <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
         <button
           onClick={handleAddToCart}
-          className="border border-[#d9d9d9] w-full sm:w-auto px-6 sm:px-12 py-3 sm:py-4 font-semibold rounded-md hover:bg-[#d9d9d9] hover:text-[#1f2629] transition-colors duration-300"
+          className="border border-[#d9d9d9] w-full sm:w-48 px-6 py-3 font-semibold rounded-md hover:bg-[#d9d9d9] hover:text-[#1f2629] transition-colors duration-300"
         >
           Add to Cart
         </button>

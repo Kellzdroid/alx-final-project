@@ -9,7 +9,7 @@ function Whoweare() {
     <>
       <section
         id="about"
-        className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 py-16 sm:py-24 md:py-32"
+        className="container mx-auto px-4 sm:px-6 md:px-24 lg:px-16 py-16 sm:py-24 md:py-32"
       >
         <h2 className="text-center font-night text-[#D9D9D9] text-2xl sm:text-4xl md:text-5xl mb-12 sm:mb-12 tracking-wide">
           WHO WE ARE

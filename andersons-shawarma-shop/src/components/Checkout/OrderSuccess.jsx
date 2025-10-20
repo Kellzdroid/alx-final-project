@@ -19,11 +19,7 @@ const OrderSuccess = ({ onClose }) => {
         ✕
       </button>
 
-      <img
-        src="/public/images/eating.jpg"
-        alt="order success"
-        className="w-64 mb-6"
-      />
+      <img src="/images/eating.jpg" alt="order success" className="w-64 mb-6" />
 
       <h2 className="text-3xl font-bold mb-3">Order Successfully Placed!</h2>
       <p className="text-lg text-[#d9d9d9]/70 mb-8 max-w-md">
