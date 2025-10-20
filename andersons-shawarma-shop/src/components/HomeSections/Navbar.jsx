@@ -75,7 +75,7 @@ const Navbar = () => {
 
         <button
           onClick={() => setShowLogin(true)}
-          className="border border-[#D9D9D9] text-[#D9D9D9] font-manrope px-12 lg:px-16 py-2 lg:py-3 rounded hover:bg-[#D9D9D9] hover:text-[#1F2629] transition-all"
+          className="border border-[#D9D9D9] text-[#D9D9D9] font-semibold font-manrope px-12 lg:px-16 py-2 lg:py-3 rounded hover:bg-[#D9D9D9] hover:text-[#1F2629] transition-all"
         >
           Log In
         </button>

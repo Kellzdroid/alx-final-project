@@ -30,7 +30,7 @@ function Whoweare() {
               serving fast — it's how things have always been done.
             </p>
 
-            <div className="flex items-center gap-3 sm:gap-4 mt-6 text-sm sm:text-base hover:underline underline-offset-4 cursor-pointer">
+            <div className="flex items-center gap-3 sm:gap-4 mt-6 font-semibold text-sm sm:text-base hover:underline underline-offset-4 cursor-pointer">
               <CgArrowLongRight size={22} />
               <Link to="/about">
                 <span>Learn more</span>

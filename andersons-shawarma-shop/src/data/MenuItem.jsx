@@ -13,30 +13,30 @@ export default function MenuItem({ image, title, price, options = [] }) {
   };
 
   return (
-    <div className="bg-[#1f2629] text-[#d9d9d9] border-1 p-8 rounded shadow-xl hover:scale-[1.02] transition-transform duration-300">
+    <div className="bg-[#1f2629] text-[#d9d9d9] border-1 p-6 sm:p-8 rounded shadow-xl hover:scale-[1.02] transition-transform duration-300">
       <div className="rounded h-100 overflow-hidden mb-4">
         <img
           src={image}
           alt={title}
-          className="w-full h-100 object-cover hover:scale-105 transition-transform duration-300"
+          className="w-full h-100 sm:h-100 object-cover hover:scale-105 transition-transform duration-300"
         />
       </div>
 
-      <h3 className="text-xl font-night mb-3 text-left">{title}</h3>
+      <h3 className="text-lg sm:text-xl font-night mb-3 text-left">{title}</h3>
 
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-6 mb-6">
         <select
           value={option}
           onChange={(e) => setOption(e.target.value)}
-          className="bg-[#d9d9d9] text-[#1f2629] w-64 px-4 py-2 rounded outline-none"
+          className="bg-[#d9d9d9] text-[#1f2629] w-full sm:w-64 px-3 py-2 rounded outline-none"
         >
           {options.map((opt, index) => (
             <option key={index}>{opt}</option>
           ))}
         </select>
 
-        <div className="flex flex-row gap-6 items-center">
-          <label className="text-sm">Quantity :</label>
+        <div className="flex flex-row justify-between sm:justify-normal gap-4 items-center">
+          <label className="text-sm">Qantity:</label>
           <input
             type="number"
             min="1"
@@ -47,15 +47,15 @@ export default function MenuItem({ image, title, price, options = [] }) {
         </div>
       </div>
 
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
         <button
           onClick={handleAddToCart}
-          className="border border-[#d9d9d9] px-12 py-4 rounded-md hover:bg-[#d9d9d9] hover:text-[#1f2629] transition-colors duration-300"
+          className="border border-[#d9d9d9] w-full sm:w-auto px-6 sm:px-12 py-3 sm:py-4 font-semibold rounded-md hover:bg-[#d9d9d9] hover:text-[#1f2629] transition-colors duration-300"
         >
           Add to Cart
         </button>
 
-        <div className="flex flex-row items-center gap-9">
+        <div className="flex flex-row items-center gap-4 sm:gap-9">
           <p className="text-sm">Price :</p>
           <p className="text-lg font-semibold">₦{price.toLocaleString()}</p>
         </div>

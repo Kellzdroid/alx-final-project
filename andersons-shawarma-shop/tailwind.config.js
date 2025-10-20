@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: "var(--font-primary)",
-        secondary: "var(--font-secondary)",
+        night: ["TheNightWatch", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
       },
 
       colors: {

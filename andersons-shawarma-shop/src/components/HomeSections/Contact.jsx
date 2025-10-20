@@ -6,7 +6,7 @@ function Contact() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-16 md:gap-24 items-start">
         <div className="rounded col-span-2 overflow-hidden shadow-md h-120 sm:h-80 md:h-96 lg:h-[30rem]">
           <img
-            src="/public/images/map.png"
+            src="/images/map.png"
             alt="Map showing New Haven, Enugu"
             className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-300"
           />
@@ -50,7 +50,7 @@ function Contact() {
 
           <div className="rounded-2xl overflow-hidden shadow-lg mt-4 sm:mt-6 h-30 sm:h-56 md:h-46">
             <img
-              src="/public/images/shop-night.png"
+              src="/images/shop-night.png"
               alt="Shawarma stand at night"
               className="w-full h-full object-cover brightness-90 hover:brightness-100 transition-all duration-300"
             />

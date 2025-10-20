@@ -7,7 +7,7 @@ function Hero() {
       <section className="relative">
         <div
           className="h-[500px] sm:h-[600px] md:h-[760px] bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url(/public/images/hero1.jpg)" }}
+          style={{ backgroundImage: "url(/images/hero1.jpg)" }}
         >
           <div className="h-full w-full flex items-center bg-black/20">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-start px-6 sm:px-10 md:px-20 lg:px-32">
@@ -25,7 +25,7 @@ function Hero() {
                 </p>
 
                 <div>
-                  <button className="mt-6 sm:mt-8 bg-transparent text-sm sm:text-base md:text-lg font-medium font-manrope text-[#D9D9D9] border border-[#D9D9D9] hover:bg-[#D9D9D9] hover:text-[#1F2926] transition-all px-8 sm:px-12 md:px-16 py-2 sm:py-3 rounded">
+                  <button className="mt-6 sm:mt-8 font-semibold text-sm sm:text-base md:text-lg font-manrope text-[#D9D9D9] border border-[#D9D9D9] hover:bg-[#D9D9D9] hover:text-[#1F2926] transition-all px-8 sm:px-12 md:px-16 py-2 sm:py-3 rounded">
                     <Link to="/menu">Place an order</Link>
                   </button>
                 </div>
