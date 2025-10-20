@@ -9,11 +9,7 @@ export default function MenuSection() {
       image: "/images/minibeef.jpg",
       price: 2500,
       category: "Beef Shawarma",
-      options: [
-        "Mini Beef Shawarma",
-        "Regular Beef Shawarma",
-        "Jumbo Beef Shawarma",
-      ],
+      options: ["Mini", "Regular", "Jumbo"],
     },
     {
       id: 2,
@@ -21,23 +17,15 @@ export default function MenuSection() {
       image: "/images/minichicken.jpg",
       price: 2300,
       category: "Chicken Shawarma",
-      options: [
-        "Mini Chicken Shawarma",
-        "Regular Chicken Shawarma",
-        "Jumbo Chicken Shawarma",
-      ],
+      options: ["Mini", "Regular", "Jumbo"],
     },
     {
       id: 3,
       title: "Mixed Grilled Shawarma",
       image: "/images/mixgrill.jpg",
       price: 2700,
-      category: "Mixed Grilled Shawarma",
-      options: [
-        "Mini Mix Shawarma",
-        "Regular Mix Shawarma",
-        "Family Mix Shawarma",
-      ],
+      category: "Mixed Shawarma",
+      options: ["Mini Mixed", "Regular Mixed", "Family Mixed"],
     },
     {
       id: 4,
