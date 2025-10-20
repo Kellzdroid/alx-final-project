@@ -51,7 +51,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter */}
         <div className="pt-4">
           <div className="flex flex-col items-start gap-4">
             <h3 className="text-2xl font-night mb-4">Newsletter</h3>
@@ -70,7 +69,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom section */}
         <div className="border-t border-[#d9d9d9] mt-12 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-center md:text-left">
           <div className="flex items-center justify-center gap-2 mb-3 md:mb-0">
             <RiCopyrightFill />

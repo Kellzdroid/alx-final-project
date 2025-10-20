@@ -1,6 +1,6 @@
 import React from "react";
-import Veg from "/public/images/vegshawarma.jpg";
-import Chef from "/public/images/whowearechef.jpeg";
+import Veg from "/images/vegshawarma.jpg";
+import Chef from "/images/whowearechef.jpeg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Link } from "react-router-dom";
 

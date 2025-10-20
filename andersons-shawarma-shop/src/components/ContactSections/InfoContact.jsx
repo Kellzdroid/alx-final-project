@@ -4,7 +4,6 @@ const InfoContact = () => {
   return (
     <div>
       <section className="px-6 sm:px-10 md:px-20 lg:px-32 py-16 md:py-32 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 items-center">
-        {/* LEFT TEXT SECTION */}
         <div className="text-[#d9d9d9] space-y-6">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-night mb-4">
             STAY TUNED
@@ -34,7 +33,6 @@ const InfoContact = () => {
           </ul>
         </div>
 
-        {/* RIGHT IMAGE SECTION */}
         <div className="rounded-xl h-64 sm:h-80 md:h-[30rem] overflow-hidden shadow-md">
           <img
             src="/images/map.png"

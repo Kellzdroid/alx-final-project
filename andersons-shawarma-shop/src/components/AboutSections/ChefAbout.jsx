@@ -1,6 +1,6 @@
 import React from "react";
-import burgerImg from "/public/images/burger.jpg";
-import Chef from "/public/images/whowearechef.jpeg";
+import burgerImg from "/images/burger.jpg";
+import Chef from "/images/whowearechef.jpeg";
 
 const ChefAbout = () => {
   return (
